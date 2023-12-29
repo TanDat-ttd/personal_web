@@ -6,7 +6,7 @@
     ================================================== -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Lab4 - Trương Tấn Đạt</title>
+    <title>Lab5 - Trương Tấn Đạt</title>
 
     <script>
         document.documentElement.classList.remove('no-js');
@@ -24,7 +24,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
-    <link rel="stylesheet" href="stylesLab4.css">
+    <link rel="stylesheet" href="stylesLab5.css">
 </head>
 
 
@@ -90,65 +90,55 @@
                     <div class="row">
                         <div class="column xl-12">
                             <h1 class="page-title">
-                                <span class="page-title__small-type text-pretitle">Lab4</span>
+                                <span class="page-title__small-type text-pretitle">Lab5</span>
                                 Trương Tấn Đạt - 22310037
                             </h1>
                             
                         </div>
                     </div>
                </section> <!-- pageheader -->  
-               <div class="menu">
-                <a href="#requirement" onclick="openTab('requirement')">Tab Requirement</a>
-                <a href="#design" onclick="openTab('design')">Tab Design</a>
-                <a href="#implement" onclick="openTab('implement')">Tab Implement</a>
-            </div>
-        
-            <div class="tab-content" id="requirement">
-                <div class="content">
-                    <h2>Requirement</h2>
-                    <p>Yêu cầu: Chọn 1 đối tượng bất kỳ trong thế giới thực, ví dụ như lớp môn học, giảng viên,… Sau đó thiết kế chức năng Quản lý đối tượng đó trên HTML bao gồm các tính năng thêm, sửa, xóa, tìm kiếm cho đối tượng đó. Ví dụ, làm chức năng Quản lý Sinh viên, bao gồm tính năng thêm, sửa, xóa, tìm kiếm. Chú ý: Các thành viên trong lớp, trong nhóm không được chọn các đối tượng giống nhau.</p>
-                </div>
-            </div>
-        
-            <div class="tab-content" id="design">
-                <div class="content">
-                    <h2>Design</h2>
-                    <!-- Nội dung thiết kế -->
-                </div>
-            </div>
-        
-            <div class="tab-content" id="implement">
-                <div class="content">
-                    <h2>Implement</h2>
-                    <div class="container">
-                        <h1>Quản lý môn học</h1>
-                        <form id="course-form">
-                            <label for="course-code">Mã học phần:</label>
-                            <input type="text" id="course-code" required placeholder="VD: 202108">
-                            <label for="course-name">Tên môn học:</label>
-                            <input type="text" id="course-name" required placeholder="VD: Toán A1">
-                            <label for="credit">Số tín chỉ:</label>
-                            <input type="number" id="credit" required placeholder="VD: 2">
-                            <button type="button" onclick="addCourse()">Thêm môn học</button>
+                <section class="lab5">
+                    <Div>
+                        <H2> User Scenario: Mua vé xem phim trực tuyến</H2>
+                        <div>
+                            1. Người dùng truy cập vào trang web đặt vé xem phim. <br>
+                            2. Người dùng chọn rạp chiếu phim gần nhất.<br>
+                            3. Người dùng chọn bộ phim mà họ muốn xem.<br>
+                            4. Người dùng chọn ngày và suất chiếu phù hợp.<br>
+                            5. Người dùng chọn số lượng và vị trí ghế ngồi.<br>
+                            6. Người dùng thêm vé vào giỏ hàng và tiến hành thanh toán.<br>
+                            7. dùng điền thông tin thanh toán và hoàn tất giao dịch.<br>
+                            8. Người dùng nhận xác nhận đặt vé qua email hoặc tin nhắn điện thoại.<br>
+                            9. Người dùng đến rạp, kiểm tra vé và xem phim.<br>
+                    </div>
+                    </Div>
+                    <div class="payment-form">
+                        <h2>Form Thanh Toán</h2>
+                        <form action="/submit_payment" method="post">
+                            <div class="form-group">
+                                <label for="name">Tên chủ thẻ:</label>
+                                <input type="text" id="name" name="name">
+                            </div>
+                            <div class="form-group">
+                                <label for="cardnumber">Số thẻ:</label>
+                                <input type="text" id="cardnumber" name="cardnumber">
+                            </div>
+                            <div class="form-group">
+                                <label for="expdate">Ngày hết hạn:</label>
+                                <input type="text" id="expdate" name="expdate">
+                            </div>
+                            <div class="form-group">
+                                <label for="cvv">CVV:</label>
+                                <input type="text" id="cvv" name="cvv">
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" value="Thanh Toán">
+                            </div>
                         </form>
-                        <input type="text" id="search" placeholder="Tìm kiếm môn học">
-                        <table id="course-list">
-                            <thead>
-                                <tr>
-                                    <th>Số thứ tự</th>
-                                    <th>Mã học phần</th>
-                                    <th>Tên môn học</th>
-                                    <th>Số tín chỉ</th>
-                                    <th>Chức năng</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <!-- Dữ liệu môn học sẽ được thêm vào đây -->
-                            </tbody>
-                        </table>
-                </div>
-            </div>
-
+                        <p>* Phần quản lí sự kiện do AI viết không nên tiết lộ thông tin, chỉ cần gõ ngẫu nhiên các kí tự. Xin cảm ơn</p>
+                    </div>
+                    <p>Link đường dẫn tới Figma user scenario: <a href="https://www.figma.com/file/GNrJy5EoYBohd4hdqSfnSR/Untitled?type=design&node-id=0%3A1&mode=design&t=xTFJE453DTLWoGF0-1">Tại đây</a></p>
+                </section> <!-- lab5 --> 
         </section> <!-- s-content-->
         
         <!-- # cta
@@ -267,6 +257,6 @@
     ================================================== -->
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-    <script src="scriptLab4.js"></script>
+    <script src="scriptLab5.js"></script>
 </body>
 </html>

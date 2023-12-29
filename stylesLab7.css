@@ -1,0 +1,122 @@
+.lab7 header{
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lab7 body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+.lab7 header h1 {
+  font-size: 24px;
+}
+/* CSS để chứa sản phẩm và thực hiện chuyển động */
+#products-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+#products {
+  display: flex;
+  animation: slideAnimation 5s infinite alternate; 
+}
+
+#products .product {
+  /* Các thuộc tính khác */
+  width: 600px;
+  padding: 10px;
+  margin: 15px;
+  border: 1px solid #ddd;
+  text-align: center;
+  transition: transform 2s ease-in-out;
+}
+.product img {
+  max-width: 100%;
+  height: auto;
+}
+@keyframes slideAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-600px); /* Điều chỉnh giá trị tùy thuộc vào số lượng sản phẩm và kích thước sản phẩm */
+  }
+}
+
+/* Thêm style cho nút */
+button {
+  margin: 10px;
+  cursor: pointer;
+}
+/* Thêm style cho nút */
+button {
+  margin: 10px;
+  cursor: pointer;
+}
+
+.product:hover {/* Hiệu ứng khi hover vào sản phẩm */
+  transform: scale(1.05);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: white;
+  max-width: 400px;
+  margin: 10% auto;
+  padding: 20px;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+/* Kiểu dáng Biểu mẫu Liên hệ */
+#contact-form-section {
+  text-align: center;
+  margin: 20px;
+}
+
+#contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+#contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 8px;
+}
+
+#contact-form button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+}

@@ -6,7 +6,7 @@
     ================================================== -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Lab4 - Trương Tấn Đạt</title>
+    <title>Lab5 - Trương Tấn Đạt</title>
 
     <script>
         document.documentElement.classList.remove('no-js');
@@ -24,7 +24,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
-    <link rel="stylesheet" href="stylesLab4.css">
+    <link rel="stylesheet" href="stylesEx1.css">
 </head>
 
 
@@ -90,65 +90,40 @@
                     <div class="row">
                         <div class="column xl-12">
                             <h1 class="page-title">
-                                <span class="page-title__small-type text-pretitle">Lab4</span>
+                                <span class="page-title__small-type text-pretitle">Lab5</span>
                                 Trương Tấn Đạt - 22310037
                             </h1>
                             
                         </div>
                     </div>
                </section> <!-- pageheader -->  
-               <div class="menu">
-                <a href="#requirement" onclick="openTab('requirement')">Tab Requirement</a>
-                <a href="#design" onclick="openTab('design')">Tab Design</a>
-                <a href="#implement" onclick="openTab('implement')">Tab Implement</a>
-            </div>
-        
-            <div class="tab-content" id="requirement">
-                <div class="content">
-                    <h2>Requirement</h2>
-                    <p>Yêu cầu: Chọn 1 đối tượng bất kỳ trong thế giới thực, ví dụ như lớp môn học, giảng viên,… Sau đó thiết kế chức năng Quản lý đối tượng đó trên HTML bao gồm các tính năng thêm, sửa, xóa, tìm kiếm cho đối tượng đó. Ví dụ, làm chức năng Quản lý Sinh viên, bao gồm tính năng thêm, sửa, xóa, tìm kiếm. Chú ý: Các thành viên trong lớp, trong nhóm không được chọn các đối tượng giống nhau.</p>
-                </div>
-            </div>
-        
-            <div class="tab-content" id="design">
-                <div class="content">
-                    <h2>Design</h2>
-                    <!-- Nội dung thiết kế -->
-                </div>
-            </div>
-        
-            <div class="tab-content" id="implement">
-                <div class="content">
-                    <h2>Implement</h2>
-                    <div class="container">
-                        <h1>Quản lý môn học</h1>
-                        <form id="course-form">
-                            <label for="course-code">Mã học phần:</label>
-                            <input type="text" id="course-code" required placeholder="VD: 202108">
-                            <label for="course-name">Tên môn học:</label>
-                            <input type="text" id="course-name" required placeholder="VD: Toán A1">
-                            <label for="credit">Số tín chỉ:</label>
-                            <input type="number" id="credit" required placeholder="VD: 2">
-                            <button type="button" onclick="addCourse()">Thêm môn học</button>
-                        </form>
-                        <input type="text" id="search" placeholder="Tìm kiếm môn học">
-                        <table id="course-list">
-                            <thead>
-                                <tr>
-                                    <th>Số thứ tự</th>
-                                    <th>Mã học phần</th>
-                                    <th>Tên môn học</th>
-                                    <th>Số tín chỉ</th>
-                                    <th>Chức năng</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <!-- Dữ liệu môn học sẽ được thêm vào đây -->
-                            </tbody>
-                        </table>
-                </div>
-            </div>
-
+                <section class="Ex1">
+                    <header>
+                        <h1>Trang Web Sử Dụng Mẫu F-pattern</h1>
+                    </header>
+                
+                    <nav>
+                        <ul>
+                            <li><a href="#">Trang Chủ</a></li>
+                            <li><a href="#">Dịch Vụ</a></li>
+                            <li><a href="#">Sản Phẩm</a></li>
+                            <li><a href="#">Liên Hệ</a></li>
+                        </ul>
+                    </nav>
+                
+                    <main>
+                        <article>
+                            <h2>Nội Dung Chính</h2>
+                            <p>Đây là nơi để bạn đặt nội dung chính của trang web sử dụng mẫu F-pattern.</p>
+                            <p>Phần nội dung này có thể mô tả sản phẩm, dịch vụ, hoặc thông tin quan trọng khác.</p>
+                        </article>
+                
+                        <aside>
+                            <h2>Phần Bên Phải</h2>
+                            <p>Đây có thể là một thanh bên, quảng cáo, hoặc thông tin phụ khác.</p>
+                        </aside>
+                    </main>
+                </section> <!-- ex1 --> 
         </section> <!-- s-content-->
         
         <!-- # cta
@@ -267,6 +242,6 @@
     ================================================== -->
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-    <script src="scriptLab4.js"></script>
+    <script src="scriptLab5.js"></script>
 </body>
 </html>
