@@ -1,0 +1,33 @@
+body{
+    height: 600px;
+}
+h1{
+    text-align: center;
+}
+.navbar ul{
+    list-style-type: none;
+    background-color: rgb(88, 51, 5);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+.navbar a:hover{
+    background-color: black;
+}
+.navbar li{
+    float: left;
+}
+.slide-show{
+    background-color: aqua;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
